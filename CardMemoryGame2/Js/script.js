@@ -123,7 +123,7 @@ function unflipCards() {
     secondCard.classList.remove("flip");
     lock = false;
     reset();
-  }, 500);
+  }, 800);
 }
 cards.forEach((card) => card.addEventListener("click", flipCard));
 shuffle();
