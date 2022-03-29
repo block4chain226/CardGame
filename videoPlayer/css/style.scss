@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.wrapper {
+  max-width: 100%;
+  min-width: 100vh;
+  box-sizing: border-box;
+  background-color: black;
+}
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.player {
+  max-width: 100%;
+
+  &__video {
+    height: 100vh;
+    position: relative;
+  }
+
+  &__control {
+  }
+  .player {
+    &__control {
+    }
+  }
+  .control {
+    display: flex;
+    justify-content: space-between;
+    &__bigspan {
+      max-width: 150px;
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__big-play {
+    }
+
+    &__little {
+      max-width: 50px;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__progress {
+      width: 70%;
+    }
+
+    &__volume-icn {
+    }
+
+    &__volume {
+      width: 20%;
+    }
+  }
+}

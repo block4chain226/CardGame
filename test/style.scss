@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.li {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 100%;
+  min-height: 100vh;
+}
+.up {
+  min-height: 50vh;
+  background-color: green;
+}
+.middle {
+  position: absolute;
+  min-height: 50vh;
+  min-width: 50vh;
+  //margin: 0 auto;
+  background-color: #fff;
+  top: 25%;
+  left: 25%;
+  border: 1px solid grey;
+}
+.down {
+  min-height: 50vh;
+  background-color: grey;
+}
+
+.table {
+  border: 1px solid black;
+}

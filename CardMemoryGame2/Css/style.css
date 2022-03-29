@@ -11,11 +11,10 @@ a {
 }
 
 body {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+  margin-top: 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -27,16 +26,16 @@ body {
 }
 
 .memory-game {
-  font-size: 40px;
+  font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #5c5c5c;
 }
 
 .container {
   width: 640px;
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +64,7 @@ body {
 .memory {
   z-index: 0;
   width: 640px;
-  height: 640px;
+  height: 540px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +90,7 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  cursor: pointer;
 }
 
 .memory__card:active {
@@ -125,7 +125,7 @@ body {
 }
 
 .lider-board {
-  text-align: left;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,6 +154,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.lider-board span {
+  font-size: 24px;
+}
+
 .visible {
   visibility: visible;
 }
@@ -163,8 +167,10 @@ body {
 }
 
 .footer__container {
-  padding: 0px 15px;
-  width: 100%;
+  width: 640px;
+  padding: 15px 15px;
+  background-color: grey;
+  border-radius: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,11 +184,13 @@ body {
   color: #ffffff;
 }
 
-.footer__github a {
-  color: #ffffff;
+.footer__github a,
+.footer__github span {
+  color: white;
 }
 
-.footer__rolling a {
-  color: #ffffff;
+.footer__rolling a,
+.footer__rolling span {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

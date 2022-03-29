@@ -1,0 +1,112 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.cards__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.cards__card {
+  padding: 0px 5px;
+  min-width: 16.666%;
+  height: 200px;
+}
+
+.cards__card img {
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+.cards__card img .cards__card img {
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+.cards .cards__card img {
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+.start {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+}
+
+.lider-board {
+  visibility: hidden;
+  z-index: 1;
+  border-radius: 6px;
+  -webkit-transform: translateX(55%);
+          transform: translateX(55%);
+  top: 30%;
+  width: 360px;
+  height: 240px;
+  position: absolute;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.lider-board span {
+  color: #9696c5;
+}
+
+.visible {
+  visibility: visible;
+}
+/*# sourceMappingURL=style.css.map */

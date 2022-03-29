@@ -1,0 +1,15 @@
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  width: 100%;
+}
+.element {
+  width: 33.3%;
+  background-color: red;
+}

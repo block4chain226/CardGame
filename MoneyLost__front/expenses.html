@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/expenses.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="header">
+        
+        <div class="header__input">
+          
+          <input type="text" name="amount" id="amount" />
+          <button type="submit" id="submit" name="submit">ok</button>
+        </div>
+        <div class="header__add-category">
+          <input type="text" name="category" id="category" />
+          <button type="submit" id="categorySub" name="categorySub">ok</button>
+        </div>
+      </section>
+      <section class="main">
+        <div class="container">
+          <div class="expenses">
+            <div class="expenses__card card">
+              <div class="card__header">
+                <span class="card__button" name="before" id="prev">prev</span>
+                <span class="card__date"></span>
+                 <span class="card__button" name="next" id="next">next</span>
+              </div>
+              <div class="card__categories">
+                <!-- <div class="card__category">food</div>
+                <div class="card__category">food</div>
+                <div class="card__category">food</div>
+                <div class="card__category">food</div>
+                <div class="card__category">food</div>
+                <div class="card__category">food</div>
+                <div class="card__category">food</div>
+                <div class="card__category">food</div> -->
+              </div>
+
+              <div class="card__footer">
+                <div class="card__balance">
+                  <span class="balance"></span>
+                </div>
+                <!-- <div class="card__buttons">
+                  <span class="button plus">+</span>
+                  <span class="button minus">-</span>
+                </div> -->
+
+                <div class="card__expenses-details">
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/js/expenses.js"></script>
+  </body>
+</html>

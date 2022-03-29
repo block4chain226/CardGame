@@ -83,32 +83,32 @@ function disableCards() {
 function getRating() {
   clearTimeout(interval);
   if (localStorage.length === 10) {
-    localStorage.removeItem(localStorage[0]);
+    localStorage.removeItem(localStorage.length - localStorage.length - 1);
   }
   if (localStorage.length == 0) {
     count += 1;
     resultArray.push(
       moves + " moves ",
       minute + " min ",
-      " " + second + " secs"
+      " " + second - 1 + " secs"
     );
-    localStorage.setItem(count + " try", resultArray);
+    localStorage.setItem(count, resultArray);
   } else {
     count = localStorage.length;
     resultArray.push(
       moves + " moves ",
       minute + " min ",
-      " " + second + " secs"
+      " " + second - 1 + " secs"
     );
-    localStorage.setItem(++count + " try", resultArray);
+    localStorage.setItem(++count, resultArray);
   }
   const liderBoard = document.querySelector(".lider-board");
   for (let key in localStorage) {
     if (localStorage.hasOwnProperty(key)) {
-      const span = document.createElement("span");
+      const p = document.createElement("p");
       console.log(`${key} : ${localStorage.getItem(key)}`);
-      span.textContent = `${key} : ${localStorage.getItem(key)}`;
-      liderBoard.append(span);
+      p.textContent = `${key} : ${localStorage.getItem(key)}`;
+      liderBoard.append(p);
     }
   }
   liderBoard.classList.add("visible");
